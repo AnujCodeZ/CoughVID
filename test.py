@@ -1,4 +1,5 @@
 import os
+import sys
 import librosa
 import librosa.display
 import numpy as np
@@ -11,7 +12,7 @@ from torchvision import transforms
 from model import CoughVIDModel
 
 
-audio_path = 'example.webm'
+audio_path = sys.argv[1]
 
 def extract_features(audio_path):
 
